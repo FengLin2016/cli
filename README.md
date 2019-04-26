@@ -2,7 +2,7 @@
 
 ```
 // 开启静态资源开发
-npm i dgg-static-cli -g 
+npm i dgg-static-cli -g
 
 dgg-static-cli stylus<可换成你熟悉的> myobject<项目名称>
 
@@ -12,4 +12,4 @@ cnpm i // 安装依赖
 
 gulp //启动gulp
 
-```"# cli" 
+```

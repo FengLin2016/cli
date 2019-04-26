@@ -7,12 +7,12 @@ const log = require('tracer').colorConsole()
 
 
 program
-    .version('1.0.0')
+    .version('1.0.4')
     .description('静态资源工程的cli')
 program
     .command('* <tpl> <project>')
     .action(function(tpl, project) {
-        log.info('目前static-cli支持各种css语言定制：less、sass、stylus')
+        log.info('目前static-cli支持各种css语言定制：stylus')
         log.info('使用例子：dgg-static-cli stylus myproject')
         if (tpl && project) {
             let pwd = shell.pwd()
