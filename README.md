@@ -1,4 +1,6 @@
-# static-cli
+# dgg-static-cli
+
+[![Build Status](https://travis-ci.org/FengLin2016/cli.svg?branch=master)](https://travis-ci.org/FengLin2016/cli)
 
 ```
 // 开启静态资源开发
