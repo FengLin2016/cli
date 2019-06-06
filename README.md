@@ -6,7 +6,8 @@
 // 开启静态资源开发
 npm i dgg-static-cli -g
 
-dgg-static-cli stylus<可换成你熟悉的> myobject<项目名称>
+dgg-static-cli stylus<stylus、sass、less> myobject<项目名称>
+dgg-static-cli phone myobject<项目名称> // 手机端模板
 
 cd myobject // 进入项目文件夹
 

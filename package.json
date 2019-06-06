@@ -1,0 +1,25 @@
+{
+  "name": "cli",
+  "version": "1.0.5",
+  "description": "[![Build Status](https://travis-ci.org/FengLin2016/cli.svg?branch=master)](https://travis-ci.org/FengLin2016/cli)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FengLin2016/cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FengLin2016/cli/issues"
+  },
+  "homepage": "https://github.com/FengLin2016/cli#readme",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "git-clone": "^0.1.0",
+    "shelljs": "^0.8.3",
+    "tracer": "^0.9.8"
+  }
+}
