@@ -12,13 +12,12 @@ program
 program
   .command('* <tpl> <project>')
   .action(function (tpl, project) {
-    log.info('目前static-cli支持各种css语言定制：stylus、sass、less')
-    log.info('使用例子：dgg-static-cli stylus myproject')
-    log.info('手机端phone')
     if (tpl && project) {
       let pwd = shell.pwd()
       log.info(`正在拉取模板代码，下载位置：${pwd}/${project}/ ...`)
-      clone(`https://github.com/FengLin2016/static-cli.git -b ${tpl}`, pwd + `/${project}`, null, function () {
+      let opts = null
+      tpl!='stylus' && (opts = {checkout: `${tpl}`})
+      clone(`https://github.com/FengLin2016/static-cli.git`, pwd + `/${project}`, opts, function () {
         shell.rm('-rf', pwd + `/${project}/.git`)
         log.info('模板工程建立完成')
       })
